@@ -18,18 +18,18 @@ package binary_search_problems;
 
  case 4 : else the bigger elements might lie ahead of mid so start=mid+1;
 
+
  * **/
 public class SearchIn_RotatedSorted_Array {
     public static void main(String[] args) {
-        int[] arr= { 3,1};
+        int[] arr= { 1};
         int pivot = findPivot(arr);
-        int target = 1;
+        int target = 0;
 
         //if pivot is not found it means it is not rotated so use normal binary search
         if(pivot==-1){
             binary_search(arr,target,0,arr.length-1);
         }
-        else{
 
             /** case 1 : if target = pivot elemet **/
             if(arr[pivot]==target)
@@ -42,7 +42,7 @@ public class SearchIn_RotatedSorted_Array {
             else{
                 System.out.println(binary_search(arr,target,pivot+1,arr.length-1));
             }
-        }
+
 
     }
     static int findPivot(int[] arr){
@@ -57,7 +57,7 @@ public class SearchIn_RotatedSorted_Array {
                 return mid;
             }
             //case 2
-            else if (arr[mid]<arr[mid-1]) {
+            else if (mid>start && arr[mid]<arr[mid-1]) {
                 return mid-1;
             }
             //case 3
