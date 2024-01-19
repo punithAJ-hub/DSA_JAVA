@@ -1,5 +1,9 @@
 import java.util.Arrays;
 
+
+/**
+ * Take a portion of the array and sort it and move forward so basically insert the element at right position
+ *  **/
 public class Insertion_sort {
 
     public static void main(String[] args) {
