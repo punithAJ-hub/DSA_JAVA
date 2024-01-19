@@ -14,11 +14,11 @@ public class Selection_sort {
     }
 
     public static int[] sort(int[] arr){
-        int j= arr.length;
         for (int i = 0; i < arr.length ; i++) {
-            int max = maxElement(arr, j);
-            swap(arr,max,j-1);
-            j--;
+            int last = arr.length-i-1;
+            int max = maxElement(arr, last);
+            swap(arr,max,last);
+
         }
         return arr;
     }
@@ -26,7 +26,7 @@ public class Selection_sort {
     static int maxElement(int[] arr , int n){
         int index=0;
         int max=arr[0];
-        for (int i = 0; i <n ; i++) {
+        for (int i = 0; i <=n ; i++) {
             if(arr[i]>max){
                 max=arr[i];
                 index=i;
