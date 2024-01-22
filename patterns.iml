@@ -2,6 +2,7 @@
 <module version="4">
   <component name="AdditionalModuleElements">
     <content url="file://$MODULE_DIR$/Algorithms" dumb="true">
+      <sourceFolder url="file://$MODULE_DIR$/Algorithms/src/main/bitwise_operations" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Algorithms/src/main/recursion" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Algorithms/src/main/sort_algos" isTestSource="false" />
     </content>
