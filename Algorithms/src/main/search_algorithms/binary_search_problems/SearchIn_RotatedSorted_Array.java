@@ -1,6 +1,6 @@
 package binary_search_problems;
 
-// [ 5,6,7,8,0,1,2,3]   the array is sorted but it is rotated
+// [ 5,6,7,8,0,1,2,3]   the array is sorted, but it is rotated
 
 /**
  * Find the maximum element/pivot and apply binary search from start - pivot and pivot - end
@@ -12,7 +12,7 @@ package binary_search_problems;
  case 2 : if arr[mid] < arr[mid-1] lets say my mid is 0 and previous to mid is 8 so arr[mid]
  < arr[mid-1] --> arr[mid-1] is pivot.
 
- case 3 : if arr[mid] <= arr[start] then we can igonore all those which are after mid
+ case 3 : if arr[mid] <= arr[start] then we can ignore all those which are after mid
           since we are looking for greater element then checking for smaller elements which is less than
           start is not needed
 
@@ -31,7 +31,7 @@ public class SearchIn_RotatedSorted_Array {
             binary_search(arr,target,0,arr.length-1);
         }
 
-            /** case 1 : if target = pivot elemet **/
+            /** case 1 : if target = pivot element **/
             if(arr[pivot]==target)
                 System.out.println(pivot);
             /** case 2 : if target lies btn start and  pivot elemet **/
@@ -42,7 +42,6 @@ public class SearchIn_RotatedSorted_Array {
             else{
                 System.out.println(binary_search(arr,target,pivot+1,arr.length-1));
             }
-
 
     }
     static int findPivot(int[] arr){
@@ -65,12 +64,10 @@ public class SearchIn_RotatedSorted_Array {
             {
                 end = mid-1;
             }
-
             //case 4
             else{
                 start= mid+1;
             }
-
         }
         return -1;
     }
