@@ -2,7 +2,6 @@ import java.util.Arrays;
 
 public class MergeSortUsingRecursion {
     public static void main(String[] args) {
-
         int[] arr = {5,4,2,1,3};
         System.out.println(Arrays.toString(merge(arr)));
     }
