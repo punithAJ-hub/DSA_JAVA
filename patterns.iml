@@ -6,6 +6,7 @@
       <sourceFolder url="file://$MODULE_DIR$/Algorithms/src/main/recursion" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Algorithms/src/main/sort_algos" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Algorithms/src/main/maths" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Algorithms/src/main/javacollections" isTestSource="false" />
     </content>
   </component>
 </module>
